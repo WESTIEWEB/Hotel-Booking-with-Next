@@ -7,10 +7,10 @@ export default defineConfig({
   name: 'default',
   title: 'hotel-manager',
 
-  projectId: 'erh9bt1w',
-  dataset: 'production',
+  projectId: process.env.NEXT_PUBLIC_SANITY_APP_ID as string,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET as string,
 
-  basePath: '/studio',
+  basePath: process.env.NEXT_SANITY_BASEPATH as string,
 
   plugins: [structureTool(), visionTool()],
 

@@ -5,6 +5,8 @@ import './globals.css'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import ThemeProvider from '../../components/ThemeProvider/ThemeProvider';
+import NextAuthProvider from '@/components/AuthProvider/AuthProvider';
+import Toast from '@/components/Toast/Toast';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700', '900'], style: ['normal'], variable: '--font-inter' });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '900'], style: ['italic', 'normal'], variable: '--font-poppins' })
@@ -22,13 +24,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${poppins.className}`}>
-        <ThemeProvider>
-          <main className='font-normal'>
-            <Header />
-            {children}
-            <Footer />
-          </main>
-        </ThemeProvider>
+        <NextAuthProvider>
+          <ThemeProvider>
+            <Toast />
+            <main className='font-normal'>
+              <Header />
+              {children}
+              <Footer />
+            </main>
+          </ThemeProvider>
+        </NextAuthProvider>
       </body>
     </html>
   )
