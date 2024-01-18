@@ -14,7 +14,7 @@ const Header = () => {
 
   const { data: session } = useSession();
   return (
-    <header className="flex flex-wrap md:flex-nowrap py-6 px-4 mx-auto items-center justify-between text-xl container">
+    <header className="flex flex-wrap md:flex-nowrap py-6 px-4 mx-auto items-center justify-between text-xl container sticky top-0 !z-50">
       <div className="flex items-center w-full md:w-2/3">
         <Link href="/" className="font-black text-tertiary-dark">
             Hotelin 
