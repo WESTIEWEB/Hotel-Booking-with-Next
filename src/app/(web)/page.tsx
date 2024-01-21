@@ -1,3 +1,4 @@
+import Gallery from "@/components/Gallery/Gallery";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import SearchComponent from "@/components/SearchComponent/SearchComponent";
 
@@ -6,9 +7,8 @@ const Home = () => {
     <>
       <HeroSection />
       <SearchComponent />
-      {/* search */}
       {/* featured rooms  */}
-      {/* gallery */}
+      <Gallery />
       {/* testimonials */}
     </>
   )

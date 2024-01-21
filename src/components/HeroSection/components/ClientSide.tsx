@@ -9,7 +9,7 @@ type ClientProps = PropsWithChildren<{
 }>;
 const ClientSide: FC<ClientProps> = ({heading1, imageComponent}) => {
   return (
-    <section className="flex px-4 gap-10 items-center container mx-auto">
+    <section className="flex px-4 gap-10 items-center justify-between container mx-auto">
         <div className="py-10 h-full">
             {heading1}
 
