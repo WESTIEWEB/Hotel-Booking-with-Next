@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Gallery = () => {
   return (
-    <section className="mx-auto container">
+    <section className="mx-auto container pt-6">
         <div className="flex flex-wrap md:m-2">
             <div className="w-1/2 flex flex-wrap">
                 <div className="w-1/2 p-1 md:p-2 h-48">

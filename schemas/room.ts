@@ -132,6 +132,46 @@ const room = {
             },
             initialValue: "basic",
         }),
+        defineField({
+            name: 'specialNote',
+            title: 'Special Note',
+            type: 'text',
+            validation: Rule => Rule.required(),
+            initialValue:
+              'Check-in time is 12:00 PM, checkout time is 11:59 AM. If you leave behind any items, please contact the receptionist.',
+          }),
+        defineField({
+        name: 'dimension',
+        title: 'Dimension',
+        type: 'string',
+        }),
+        defineField({
+            name: 'isFeatured',
+            title: 'Is Featured',
+            type: 'boolean',
+            initialValue: false,
+        }),
+        defineField({
+            name: "offeredAmenities",
+            title: "Offered Amenities",
+            type: "array",
+            of: [
+                { type: "object",
+                    fields: [
+                        defineField({
+                            name: "amenity",
+                            title: "Amenity",
+                            type: "string",
+                        }),
+                        defineField({
+                            name: "icon",
+                            title: "Icon",
+                            type: "string",
+                        }),
+                    ]
+                },
+            ],
+        }),
     ],
 }
 

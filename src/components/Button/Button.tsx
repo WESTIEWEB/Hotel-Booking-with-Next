@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react'
 
 type ButtonProps = PropsWithChildren<{
-    onClick: () => void;
+    handleClick: () => void;
     className?: string;
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
@@ -9,7 +9,7 @@ type ButtonProps = PropsWithChildren<{
 }>;
 
 const Button: FC<ButtonProps> = ({
-    onClick,
+    handleClick,
     className,
     disabled,
     type,
@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({
     <button 
         className={className} 
         disabled={disabled}
-        onClick={onClick}
+        onClick={handleClick}
         type={type}
     >
         {text}

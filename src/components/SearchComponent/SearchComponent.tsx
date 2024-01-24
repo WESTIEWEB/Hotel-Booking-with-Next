@@ -45,7 +45,7 @@ const SearchComponent = () => {
                 text="Search"
                 type="button"
                 className="btn-primary"
-                onClick={handleButtonClick}
+                handleClick={handleButtonClick}
             />
         </div>
     </section>
