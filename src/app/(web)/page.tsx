@@ -7,7 +7,7 @@ import { getFeaturedRooms } from "@/libs/api";
 import { RoomT } from "../models/rooom";
 
 const Home = async () => {
-  const featuredRooms = await getFeaturedRooms() as unknown as RoomT[];
+  const featuredRooms = await getFeaturedRooms() as unknown as RoomT;
   return (
     <>
       <HeroSection />

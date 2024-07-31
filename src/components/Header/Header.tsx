@@ -30,7 +30,7 @@ const Header = () => {
   const { data: session } = useSession();
   return (
     <header className={`sticky top-0 !z-50 ${scrolled ? "dark:bg-gray-700 bg-white" : "bg-transparent"}`}>
-      <div className="flex flex-wrap md:flex-nowrap py-6 px-4 mx-auto items-center justify-between text-xl container">
+      <div className="flex flex-wrap md:flex-nowrap py-6 px-2 mx-auto items-center justify-between text-xl container">
           <div className="flex items-center w-full md:w-2/3">
             <Link href="/" className="font-black text-tertiary-dark">
                 Hotelin

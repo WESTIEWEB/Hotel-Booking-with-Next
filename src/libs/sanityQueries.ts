@@ -10,4 +10,5 @@ export const getFeaturedRoomQuery = groq`*[_type == "room" && isFeatured == true
     slug,
     images,
     isFeatured,
+    coverImage,
 }`;

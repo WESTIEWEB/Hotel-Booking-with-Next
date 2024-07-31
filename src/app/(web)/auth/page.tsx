@@ -89,7 +89,7 @@ const Auth = () => {
   
   const inputStyles = `border text-red-600 dark:text-gray-700 border-gray-300 sm:text-sm rounded-lg p-2.5 w-full focus:outline-none`
   return (
-    <section className="container mx-auto">
+    <section className="container px-4 md:px-20 mx-auto">
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8 w-80 md:w-[70%] mx-auto">
         <div className="flex mb-8 flex-col md:flex-row items-center justify-between">
             <h1 className="text-xl font-bold leading-tight tracking-tight md:text-2xl">

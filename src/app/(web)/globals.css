@@ -22,6 +22,7 @@
     @apply font-medium md:font-semibold md:text-6xl text-3xl;
 }
 
-.font-basic {
+.font-subheading {
     @apply font-normal md:font-medium md:text-base text-sm;
 }
+
